@@ -1,11 +1,10 @@
 # nuclei-segmentation-pytorch
-Repository containing code to train a U-net segmentation model to segment nuclei.
-
-Data downloaded from: https://www.kaggle.com/c/data-science-bowl-2018
+Repository containing code to train a U-net segmentation model to segment nuclei.<br>
 The code can be implemented in two ways, through the notebook - NucleiSegmentation.ipynb or through the individual .py files.
 
-## Notebook Instructions:
-1. Download the data. Extract Stage 1 images and store with the following structure:
+
+Data downloaded from: https://www.kaggle.com/c/data-science-bowl-2018 <br>
+Download the data. Extract Stage 1 images and store with the following structure:
   * stage_1/
     * train/
       * 00ae65c1c6631ae6f2be1a449902976e6eb8483bf6b0740d00530220832c6d3e/
@@ -14,9 +13,10 @@ The code can be implemented in two ways, through the notebook - NucleiSegmentati
     * test/
       * 0a849e0eb15faa8a6d7329c3dd66aabe9a294cccb52ed30a90c8ca99092ae732/
         * images/
-      
-2. Change default values in the notebook if needed.
-3. Run the notebook.
+        
+## Notebook Instructions:
+1. Change default values in the notebook if needed.
+2. Run the notebook.
 
 ## Manual Implementation Instructions:
 1. Run utils.py with arguments:
@@ -29,8 +29,8 @@ The code can be implemented in two ways, through the notebook - NucleiSegmentati
   Example: 
   ```python utils.py --train_dir stage_1/train/ --test_dir stage_1/test/ --text_dir stage_1/ --val_split_size: 0.10 --random_seed: 7```
  
- This combines all the masks for each image into a single mask.
-2. Make changes to the config file if needed.
+ This combines all the masks for each image into a single mask.<br>
+2. Make changes to the config file if needed.<br>
 3. Run train.py with arguments:
   - --config: Path to config file
   
@@ -40,3 +40,6 @@ The code can be implemented in two ways, through the notebook - NucleiSegmentati
 4. Run test.py with arguments:
   - --output_dir: Output directory of the experiment
   - --threshold: Threshold for model prediction
+  
+  Example:
+  ```python test.py --output_dir experiment_test/ --threshold 0.5```
