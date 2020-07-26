@@ -29,14 +29,15 @@ Download the data. Extract Stage 1 images and store with the following structure
   Example: 
   ```python utils.py --train_dir stage_1/train/ --test_dir stage_1/test/ --text_dir stage_1/ --val_split_size: 0.10 --random_seed: 7```
  
- This combines all the masks for each image into a single mask.<br>
+   This combines all the masks for each image into a single mask.
+
 2. Make changes to the config file if needed.<br>
 3. Run train.py with arguments:
   - --config: Path to config file
   
   Example: 
   ```python train.py --config config.yml```
- 
+  
 4. Run test.py with arguments:
   - --output_dir: Output directory of the experiment
   - --threshold: Threshold for model prediction
