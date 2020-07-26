@@ -27,7 +27,7 @@ Download the data. Extract Stage 1 images and store with the following structure
   - --random_seed: Random seed for the split to ensure reproducibility
   
   Example: 
-  ```python utils.py --train_dir stage_1/train/ --test_dir stage_1/test/ --text_dir stage_1/ --val_split_size: 0.10 --random_seed: 7```
+  ```python utils.py --train_dir stage_1/train/ --test_dir stage_1/test/ --text_dir stage_1/ --val_split_size 0.10 --random_seed 7```
  
    This combines all the masks for each image into a single mask.
 
