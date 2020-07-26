@@ -1,0 +1,8 @@
+matplotlib==3.1.1
+prettytable==0.7.2
+torchvision==0.6.1+cu101
+numpy==1.18.5
+tqdm==4.40.0
+torch==1.5.1+cu101
+opencv_python==4.1.1.26
+PyYAML==5.3.1

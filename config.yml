@@ -1,0 +1,17 @@
+output_dir: "experiment1"
+input_size: !!python/tuple 
+- 256
+- 256
+train_images_txt: "stage_1/train_images.txt"
+train_masks_txt: "stage_1/train_masks.txt"
+val_images_txt: "stage_1/val_images.txt"
+val_masks_txt: "stage_1/val_masks.txt"
+test_images_txt: "stage_1/test_images.txt"
+batch_size: 4
+seed: 7
+num_channels: 3
+n_classes: 1
+bilinear: !!python/bool False
+num_epochs: 2
+learning_rate: 0.0001
+patience: 10
